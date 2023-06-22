@@ -1,0 +1,205 @@
+{
+  "matches": [
+    {
+      "team1": "5",
+      "team2": "6",
+      "runs": [
+        3,
+        6,
+        1,
+        6,
+        1,
+        1,
+        2,
+        1,
+        4,
+        6,
+        6,
+        6
+      ],
+      "firstBowl": 5,
+      "id": 2
+    },
+    {
+      "team1": "3",
+      "team2": "2",
+      "runs": [
+        2,
+        4,
+        6,
+        3,
+        3,
+        3,
+        4
+      ],
+      "firstBowl": 2,
+      "id": 3
+    },
+    {
+      "team1": "1",
+      "team2": "2",
+      "runs": [
+        3,
+        6,
+        4,
+        3,
+        6,
+        1,
+        4,
+        4,
+        6,
+        4,
+        1,
+        2
+      ],
+      "firstBowl": 1,
+      "id": 4
+    },
+    {
+      "team1": "1",
+      "team2": "2",
+      "runs": [
+        6,
+        4,
+        1,
+        4,
+        1,
+        4,
+        1,
+        3,
+        4,
+        3,
+        6,
+        6
+      ],
+      "firstBowl": 1,
+      "id": 5
+    },
+    {
+      "team1": "1",
+      "team2": "2",
+      "runs": [
+        6,
+        6,
+        3,
+        3,
+        1,
+        2,
+        4
+      ],
+      "firstBowl": 1,
+      "id": 6
+    },
+    {
+      "team1": "3",
+      "team2": "4",
+      "runs": [
+        6,
+        2,
+        2,
+        2,
+        4,
+        2,
+        6,
+        1,
+        6,
+        1,
+        6,
+        2
+      ],
+      "firstBowl": 3,
+      "id": 7
+    },
+    {
+      "team1": "2",
+      "team2": "1",
+      "runs": [
+        4,
+        4,
+        6,
+        1,
+        6,
+        6,
+        6,
+        3,
+        2,
+        6,
+        2,
+        1
+      ],
+      "firstBowl": 1,
+      "id": 8
+    },
+    {
+      "team1": "1",
+      "team2": "2",
+      "runs": [],
+      "firstBowl": 1,
+      "id": 9
+    },
+    {
+      "team1": "3",
+      "team2": "4",
+      "runs": [],
+      "firstBowl": 3,
+      "id": 10
+    },
+    {
+      "team1": "1",
+      "team2": "4",
+      "runs": [],
+      "firstBowl": 4,
+      "id": 11
+    },
+    {
+      "team1": "3",
+      "team2": "5",
+      "runs": [],
+      "firstBowl": 5,
+      "id": 12
+    },
+    {
+      "team1": "1",
+      "team2": "2",
+      "runs": [
+        1,
+        2,
+        2
+      ],
+      "firstBowl": 1,
+      "id": 13
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Bangladesh",
+      "img": "Flag_of_Bangladesh.png"
+    },
+    {
+      "id": 2,
+      "name": "India",
+      "img": "Flag_of_India.png"
+    },
+    {
+      "id": 3,
+      "name": "Pakistan",
+      "img": "Flag_of_Pakistan.png"
+    },
+    {
+      "id": 4,
+      "name": "Australia",
+      "img": "Flag_of_Australia.png"
+    },
+    {
+      "id": 5,
+      "name": "England",
+      "img": "Flag_of_England.png"
+    },
+    {
+      "id": 6,
+      "name": "Sri Lanka",
+      "img": "Flag_of_Sri_Lanka.png"
+    }
+  ]
+}
