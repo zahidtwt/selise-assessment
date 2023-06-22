@@ -112,32 +112,32 @@
     {
       "id": 1,
       "name": "Bangladesh",
-      "img": "Flag_of_Bangladesh.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png"
     },
     {
       "id": 2,
       "name": "India",
-      "img": "Flag_of_India.png"
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/800px-Flag_of_India.svg.png"
     },
     {
       "id": 3,
       "name": "Pakistan",
-      "img": "Flag_of_Pakistan.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/2560px-Flag_of_Pakistan.svg.png"
     },
     {
       "id": 4,
       "name": "Australia",
-      "img": "Flag_of_Australia.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"
     },
     {
       "id": 5,
       "name": "England",
-      "img": "Flag_of_England.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/800px-Flag_of_England.svg.png"
     },
     {
       "id": 6,
       "name": "Sri Lanka",
-      "img": "Flag_of_Sri_Lanka.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/800px-Flag_of_Sri_Lanka.svg.png"
     }
   ]
 }

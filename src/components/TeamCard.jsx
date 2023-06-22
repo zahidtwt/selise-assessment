@@ -2,8 +2,6 @@ import React from 'react';
 import { MdClose } from 'react-icons/md';
 
 const TeamCard = ({ team, selected, onSelect, selectedTeams }) => {
-  const IMG_DIRECTORY = '/src/assets/flags/';
-
   const handleSelect = () => {
     if (selected) {
       onSelect(team.id);
@@ -24,7 +22,7 @@ const TeamCard = ({ team, selected, onSelect, selectedTeams }) => {
         <div className='absolute inset-0 bg-black opacity-25 rounded-lg' />
       )}
       <img
-        src={IMG_DIRECTORY + team.img}
+        src={team.img}
         alt={team.name}
         className={`w-[200px] h-[100px] mx-auto  shadow-md mb-2 ${
           selected ? 'opacity-50' : ''
