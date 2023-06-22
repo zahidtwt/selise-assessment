@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE_URL = 'https://cricket-server-d69n.onrender.com/';
+const API_BASE_URL = 'https://cricket-server-d69n.onrender.com';
 const fetchTeams = async () => {
   try {
     const response = await axios.get(`${API_BASE_URL}/teams`);
