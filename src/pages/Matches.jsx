@@ -40,9 +40,7 @@ const MatchListPage = () => {
 
   const indexOfLastMatch = currentPage * matchesPerPage;
   const indexOfFirstMatch = indexOfLastMatch - matchesPerPage;
-  const currentMatches = matches
-    .filter((match) => match.runs.length === 12)
-    .slice(indexOfFirstMatch, indexOfLastMatch);
+  const currentMatches = matches.slice(indexOfFirstMatch, indexOfLastMatch);
 
   return (
     <div className='container mx-auto px-4 py-8'>
