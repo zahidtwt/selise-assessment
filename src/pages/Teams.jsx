@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout';
 import TeamCard from '../components/TeamCard';
 import { fetchTeams } from '../services/apiService';
 

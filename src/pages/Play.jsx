@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Layout from '../components/Layout';
 import RunsTable from '../components/RunsTable';
 import { fetchMatch, fetchTeam, updateMatchRuns } from '../services/apiService';
 
@@ -25,7 +24,7 @@ const PlayPage = () => {
       }
     };
     fetchData();
-  }, [uuid, matchData]);
+  }, [uuid]);
 
   if (!matchData || !teamData1 || !teamData2) {
     return <div>Loading match data...</div>;
@@ -73,7 +72,7 @@ const PlayPage = () => {
 
   return (
     <div className='container mx-auto px-4 py-4'>
-      <div className='flex flex-col items-center justify-center'>
+      <div className='flex flex-col items-center justify-center text-center'>
         <h1 className='text-3xl font-semibold mb-4'>
           {getTeamName(+matchData.team1)} vs {getTeamName(+matchData.team2)}
         </h1>

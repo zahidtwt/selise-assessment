@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
-import { fetchMatches, removeMatch } from '../services/apiService';
+import { fetchMatches, fetchTeam, removeMatch } from '../services/apiService';
 
 const MatchListPage = () => {
   const [matches, setMatches] = useState([]);
@@ -14,7 +13,9 @@ const MatchListPage = () => {
       try {
         const data = await fetchMatches();
         setMatches(data);
-        setTotalMatches(data.length);
+        setTotalMatches(
+          data.filter((match) => match.runs.length === 12).length
+        );
       } catch (error) {
         console.error('Error fetching match data:', error);
       }
@@ -38,9 +39,36 @@ const MatchListPage = () => {
     setCurrentPage(page);
   };
 
+  const fetchTeamNames = async (team1Id, team2Id) => {
+    const team1Data = await fetchTeam(team1Id);
+    const team2Data = await fetchTeam(team2Id);
+
+    return { team1: team1Data.name, team2: team2Data.name };
+  };
+
   const indexOfLastMatch = currentPage * matchesPerPage;
   const indexOfFirstMatch = indexOfLastMatch - matchesPerPage;
-  const currentMatches = matches.slice(indexOfFirstMatch, indexOfLastMatch);
+  const currentMatches = matches
+    .filter((match) => match.runs.length === 12)
+    .slice(indexOfFirstMatch, indexOfLastMatch);
+
+  useEffect(() => {
+    const fetchTeamNamesForMatches = async () => {
+      const matchesWithTeamNames = await Promise.all(
+        currentMatches.map(async (match) => {
+          const { team1, team2 } = await fetchTeamNames(
+            match.team1,
+            match.team2
+          );
+          return { ...match, team1, team2 };
+        })
+      );
+
+      setMatches(matchesWithTeamNames);
+    };
+
+    fetchTeamNamesForMatches();
+  }, [currentMatches]);
 
   return (
     <div className='container mx-auto px-4 py-8'>

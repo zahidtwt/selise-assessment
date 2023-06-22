@@ -7,8 +7,8 @@ const RunsTable = ({ runs }) => {
       <table className='w-full mt-4'>
         <thead>
           <tr>
-            <th className='px-4 py-2 text-left border'>Over</th>
-            <th className='px-4 py-2 text-left border'>Run</th>
+            <th className='px-4 py-2  border'>Over</th>
+            <th className='px-4 py-2  border'>Run</th>
           </tr>
         </thead>
         <tbody>

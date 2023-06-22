@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import Layout from '../components/Layout';
 import TeamCard from '../components/TeamCard';
 import { fetchTeam, postMatch } from '../services/apiService';
 
 const TossPage = () => {
   const { team1, team2 } = useParams();
-
   const [teamData1, setTeamData1] = useState(null);
   const [teamData2, setTeamData2] = useState(null);
   const [firstBowl, setFirstBowl] = useState(null);

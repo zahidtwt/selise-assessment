@@ -58,8 +58,8 @@ const MatchDetailsPage = () => {
   };
 
   return (
-    <div className='container mx-auto px-4 py-4'>
-      <div className='flex flex-col items-center justify-center'>
+    <div className='container mx-auto p-4  '>
+      <div className='flex flex-col items-center justify-center text-center'>
         <h1 className='text-3xl font-semibold mb-4'>
           {getTeamName(+matchData.team1)} vs {getTeamName(+matchData.team2)}
         </h1>
@@ -76,8 +76,8 @@ const MatchDetailsPage = () => {
             </h2>
           </div>
         )}
-        <RunsTable runs={runs} />
       </div>
+      <RunsTable runs={runs} />
     </div>
   );
 };
