@@ -44,6 +44,7 @@ const TeamSelectionPage = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <h1 className='text-3xl font-semibold mb-4'>Let's Play Cricket</h1>
+
       <div className='grid grid-cols-2 gap-2 justify-center'>
         {teams.map((team) => (
           <TeamCard
@@ -59,7 +60,7 @@ const TeamSelectionPage = () => {
         <button
           className='mt-4  px-4 py-2 bg-purple-500 text-white rounded-lg'
           onClick={handleStartMatch}>
-          Start Match
+          Toss Now
         </button>
       )}
     </div>
